@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cb7n1atssijmn"]
+
+[ext_resource type="Texture2D" uid="uid://d0vmu1tov3md7" path="res://assets/tilesets/Overworld/coins.png" id="1_e1pk3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwu7u"]
+atlas = ExtResource("1_e1pk3")
+region = Rect2(0.99427056, 24.992725, 16.003199, 16.009304)
+filter_clip = true
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_488eo"]
+radius = 5.0
+height = 14.0
+
+[node name="Coin" type="Area2D" unique_id=1921536342]
+collision_layer = 32
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1238442670]
+texture = SubResource("AtlasTexture_iwu7u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1139513399]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_488eo")
