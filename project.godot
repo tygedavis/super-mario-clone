@@ -40,3 +40,4 @@ Persist="Collection of Nodes that Needs Data Saved"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0.5803922, 0.5803922, 1, 1)
