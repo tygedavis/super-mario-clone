@@ -39,5 +39,6 @@ Persist="Collection of Nodes that Needs Data Saved"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 environment/defaults/default_clear_color=Color(0.5803922, 0.5803922, 1, 1)
