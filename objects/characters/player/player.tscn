@@ -141,12 +141,15 @@ size = Vector2(16, 32)
 [node name="Player" type="Area2D" unique_id=823143226]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2132384067]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_botr1")
 animation = &"small_idle"
 
 [node name="SmallMarioCollision" type="CollisionShape2D" parent="." unique_id=1602394397]
+visible = false
 shape = SubResource("RectangleShape2D_vgj2c")
 
 [node name="BigMarioCollision" type="CollisionShape2D" parent="." unique_id=625144722]
+visible = false
 shape = SubResource("RectangleShape2D_nh8hw")
 disabled = true
